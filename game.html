@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gravity Points</title>
+  
+  
+  
+      <link rel="stylesheet" href="styles/game.css">
+
+  
+</head>
+
+<body>
+
+  <canvas id="c"></canvas>
+<div class="info"><h2>游戏规则</h2></div>
+  <script src='scripts/kzymdn.js'></script>
+
+  <script  src="scripts/game.js"></script>
+
+
+
+
+</body>
+<script src="scripts/jquery-3.3.1.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+      $('.info').hover(function(){
+          $('.info').empty();
+          $('.info').append("点击产生黑洞，黑洞之间互相吸引，汇聚变大，当大到一定程度时会爆炸。右上角可以控制行星数量和黑洞是否互相吸引。");
+      })
+      $('.info').mouseleave(function () {
+          $('.info').empty();
+          $('.info').append("游戏规则");
+      })
+  })
+
+</script>
+</html>

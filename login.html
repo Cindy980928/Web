@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录界面</title>
+<link rel="stylesheet" href="styles/lrtk.css">
+</head>
+<body>
+<div id="login">
+    <div class="wrapper">
+        <div class="login">
+            <form action="php/login.php" method="post" class="container loginform">
+                <div id="owl-login">
+                    <div class="hand"></div>
+                    <div class="hand hand-r"></div>
+                    <div class="arms">
+                        <div class="arm"></div>
+                        <div class="arm arm-r"></div>
+                    </div>
+                </div>
+                <div class="pad">
+                    <div class="controls">
+                        <input id="stuid" name="stuid" placeholder="ID" tabindex="1" autofocus="autofocus" class="form-control input-medium">
+                    </div>
+                    <div class="controls">
+                        <input id="password" type="password" name="password" placeholder="Password" tabindex="2" class="form-control input-medium">
+                    </div>
+                    <input class="loginradio" type="radio" name="people" value="teacher">teacher
+                    <input class="loginradio" type="radio" name="people" value="student" checked>student
+                    <input class="loginradio" type="radio" name="people" value="admin">admin
+                </div>
+
+                <div class="form-actions">
+                    <button class="btn"><a href="images/forget.jpg" tabindex="5" >Forgot password?</a></button>
+                    <button class="btn"><a href="SignUp.html" tabindex="6" >Sign Up</a></button>
+                    <button id="loginbtn" type="submit" name="submit" tabindex="4" class="btn btn-primary">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+
+    <script>
+    $(function() {
+
+        $('#login #password').focus(function() {
+            $('#owl-login').addClass('password');
+        }).blur(function() {
+            $('#owl-login').removeClass('password');
+        });
+    });
+    </script>
+</div>
+</body>
+</html>

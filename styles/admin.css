@@ -1,0 +1,67 @@
+.navbar{
+    height: 80px;
+    background-color: white;
+}
+#logo{
+    height: 60px;
+    width:300px;
+}
+.title{
+    font-size: 30px;
+    font-width: 5px;
+    color: #777777;
+    margin-top: 20px;
+    margin-left: 24%;
+}
+.idTabs{
+    margin-top: 80px;
+}
+.teacher{
+    margin-top: -800px;
+}
+.xialabtn{
+    margin-top: 20px;
+    float: right;
+    margin-right: 30px;
+}
+
+thead {
+    background-color: #42b983;
+}
+
+h4{
+    margin-left: 20px;
+}
+
+/* Style for tabs */
+#main {
+    padding:15px 20px;
+    width:1200px;
+    margin:0px auto;
+}
+#main > li, #main > ul > li { list-style:none; float:left; }
+#main ul a {
+    display:block;
+    padding:6px 10px;
+    text-decoration:none!important;
+    margin:1px;
+    margin-left:0;
+    color:#000;
+}
+#main ul a:hover {
+    color:#FFF;
+    background:#111;
+}
+#main ul a.selected {
+    margin-bottom:0;
+    color:#000;
+    background:snow;
+    border-bottom:1px solid snow;
+    cursor:default;
+}
+#main div a { color:#000; font-weight:bold; }
+
+.container{
+    display: none;
+    margin-top: 80px;
+}

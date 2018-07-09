@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/signUp.css">
+    <style>
+        .loginradio{
+            margin-left: 20%;
+            margin-bottom: 10px;
+        }
+        .teacher{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="container student">
+        <!--学生注册页面-->
+        <form class="form-horizontal" action="php/signup.php" method="post">
+            <div class="loginradio ">
+                <input type="radio" name="people" value="teacher">teacher sign&nbsp&nbsp
+                <input type="radio" name="people" value="student" checked>student sign
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">Student Number</label>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="stuid" placeholder="StudentNumber">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">name</label>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="name" placeholder="name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">Phone Number</label>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="phone" placeholder="Phone Number">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">Password</label>
+                <div class="col-md-6">
+                    <input type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">sex</label>
+                <div class="col-md-2">
+                    <input type="radio"  name="sex" value="男">男
+                    <input type="radio"  name="sex" value="女">女
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">major</label>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="major" placeholder="major">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">class</label>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="class" placeholder="class">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-3 col-md-3">
+                    <button type="submit" class="btn btn-default">register</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="container teacher">
+        <!--导师注册页面-->
+        <form class="form-horizontal" action="php/signup.php" method="post">
+            <div class="loginradio ">
+                <input type="radio" name="people" value="teacher" checked>teacher sign&nbsp&nbsp
+                <input type="radio" name="people" value="student">student sign
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">TeacherNumber</label>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="tid" placeholder="Teacher Number">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">name</label>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="tname" placeholder="name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">Phone Number</label>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="tphone" placeholder="Phone Number">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">Password</label>
+                <div class="col-md-6">
+                    <input type="password" class="form-control" name="tpassword" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">sex</label>
+                <div class="col-md-2">
+                    <input type="radio"  name="sex" value="男">男
+                    <input type="radio"  name="sex" value="女">女
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">major</label>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="direction" placeholder="direction">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">position</label>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="position" placeholder="position">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-3 col-md-3">
+                    <button type="submit" class="btn btn-default">register</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+<script src="scripts/jquery-3.3.1.min.js"></script>
+
+<script src="scripts/signup.js"></script>
+</body>
+</html>

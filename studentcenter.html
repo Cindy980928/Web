@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-brand" href="#">
+            <img id="logo" src="images/logo.png">
+        </div>
+        <div class="navbar-header title">学生导师选择系统</div>
+        <div class="navbar-header xialabtn">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" id="my">
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#page" id="reset">修改密码</a></li>
+                    <li><a href="#studentinfo" id="info">我的信息</a></li>
+                    <li><a href="game.html">玩游戏</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li><a href="login.html">退出登录</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+</header>
+
+<div id="header">
+
+</div>
+<div id="a"></div>
+<div id="pageHr">
+    <i><i><a href="#page" style="color: white">↓</a></i></i>
+</div>
+
+<div id="page">
+
+    <div class="container contain">
+        <div class="row">
+            <form class="col-md-12">
+                <div class="form-group">
+                    <label>old password</label>
+                    <input type="password" class="form-control" id="Soldpassword"
+                           placeholder="old password">
+                </div>
+                <div class="form-group">
+                    <label>new password</label>
+                    <input type="password" class="form-control" id="Snewpassword"
+                           placeholder="new password">
+                </div>
+                <div class="pbtn">
+                    <button type="submit" id="Rsubmit" class="btn btn-primary">submit</button>
+                    <button id="cancle" type="button" class="btn btn-primary"><a href="#a" style="text-decoration: none">cancle</a>
+                    </button>
+                </div>
+        </form>
+        </div>
+    </div>
+
+
+    <div class="container" id="studentinfo">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <div class="pull-left">
+                            <i class="glyphicon glyphicon-user"></i>个人信息
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-md-6">
+                            <div class="infop">
+                                <h4>
+                                    <small class="lb">姓名</small><br>
+                                    <div id="name" class="infopanel"></div>
+                                </h4>
+
+                            </div>
+                            <div class="infop">
+                                <h4><small class="lb">学号</small>
+                                    <br><div id="id" class="infopanel"></div></h4>
+
+                            </div>
+                            <div class="infop">
+                                <h4><small class="lb">性别</small><br><div id="sex" class="infopanel"></div></h4>
+
+                            </div>
+                            <div class="infop">
+                                <h4><small class="lb">专业</small><br><div id="major" class="infopanel"></div></h4>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6" id="right">
+                            <div class="infop">
+                                <h4><small class="lb">班级</small><br><div id="class" class="infopanel"></div></h4>
+
+                            </div>
+                            <div class="infop">
+                                <h4><small class="lb">电话</small><br><div id="phone" class="infopanel"></div></h4>
+
+                            </div>
+                            <div class="infop">
+                                <h4><small class="lb">选导师状态</small><br><div id="state" class="infopanel"></div></h4>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="scripts/index.js"></script>
+<script src="scripts/studentcenter.js"></script>
+</html>
